@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["joseph@pintozzi.com"]
   spec.description   = "Tocify is an easy way to generate a table of contents for your markdown file"
   spec.summary       = ""
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/pyro2927/tocify"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
