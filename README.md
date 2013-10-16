@@ -1,6 +1,6 @@
 # Tocify
 
-TODO: Write a gem description
+Tocify aims to create a Table of Contents for your markdown files.  By default the generated ToC will be dumped to STDOUT.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+By default tocify will check for a file named `README.md` in the current directory.
+
+    tocify
+
+Otherwise you can pass in a filename as a parameter.
+
+    tocify OTHERFILE.md
 
 ## Contributing
 
