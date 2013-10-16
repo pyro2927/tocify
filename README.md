@@ -1,6 +1,6 @@
 # Tocify
 
-Tocify aims to create a Table of Contents for your markdown files.  By default the generated ToC will be dumped to STDOUT.
+Tocify aims to create a table of contents for your markdown files.  By default the generated ToC will be dumped to STDOUT.  Add the `-i` or `--inject` flag to put the table of contents back into your file.
 
 ## Table of Contents
 * [Installation](#installation)
