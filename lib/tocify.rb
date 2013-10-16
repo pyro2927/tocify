@@ -50,7 +50,8 @@ module Tocify
         title = line.split(" ")
         title.shift
         # links are the title, downcased, and spaces replaced with hyphens
-        link = title.map {|w| w.downcase } .join("-")
+        # also make sure to remove non-alphanumeric characters
+        link = title.map {|w| w.downcase } .join("-").delete('^a-zA-Z0-9')
         toc << "#{spaces}* [#{title.join(" ")}](##{link})"
       end
     end
