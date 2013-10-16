@@ -2,6 +2,11 @@
 
 Tocify aims to create a Table of Contents for your markdown files.  By default the generated ToC will be dumped to STDOUT.
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+
 ## Installation
 
 Add this line to your application's Gemfile:

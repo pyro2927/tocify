@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 
 require 'tocify'
-puts Tocify.generate(ARGV[0])
+puts Tocify.filter_args(ARGV)
+
