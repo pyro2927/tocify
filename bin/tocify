@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'tocify'
+puts Tocify.generate(ARGV[0])
