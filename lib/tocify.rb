@@ -58,7 +58,7 @@ module Tocify
   end
 
   def self.insert(toc, file_name)
-    lines = File.read_lines(file_name)
+    lines = File.readlines(file_name)
     existing_toc = false
     header = toc.split("\n")[0]
     toc_index = 0
