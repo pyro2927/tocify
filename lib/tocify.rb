@@ -58,21 +58,8 @@ module Tocify
   end
 
   def self.insert(toc, file_name)
-    lines = File.readlines(file_name)
-    existing_toc = false
-    header = toc.split("\n")[0]
-    toc_index = 0
-    lines.each do |line|
-      if line.start_with? header
-        existing_toc = true
-      elsif line.start_with? "##"
-        toc_index = lines.index(line)
-        break
-      end
-
-      lines.delete(line) if existing_toc
-    end
-    lines.insert(toc_index, [""] + toc.split("\n") + ["",""])
-    File.write(file_name, lines.join("\n"))
+    content = File.read(file_name)
+    content.sub!(/(\n## Table of Contents.+?|)\n##/im, "\n" + toc + "\n\n##")
+    File.write(file_name, content)
   end
 end
