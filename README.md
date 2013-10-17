@@ -5,6 +5,10 @@ Tocify aims to create a table of contents for your markdown files.  By default t
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Sample Output](#sample-output)
+* [Manual Insertion](#manual-insertion)
+    * [OS X](#os-x)
+    * [Linux](#linux)
 * [Contributing](#contributing)
 
 ## Installation
@@ -30,7 +34,38 @@ By default tocify will check for a file named `README.md` in the current directo
 Otherwise you can pass in a filename as a parameter.
 
     tocify OTHERFILE.md
+ 
+To automatically insert the ToC into your README, run
 
+    tocify -i
+
+## Sample Output
+ 
+When running `tocify` on this file, you get:
+
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Sample Output](#sample-output)
+    * [Manual Insertion](#manual-insertion)
+        * [OS X](#os-x)
+        * [Linux](#linux)
+    * [Contributing](#contributing)
+
+## Manual Insertion
+
+If you want to manually insert the generated ToC you can.  An easy way is to pipe the output of `tocify` into your paste bufffer.
+
+### OS X
+
+    tocify | pbcopy
+
+### Linux
+
+    tocify | xclip
+
+_Requires xclip to be installed_
+ 
 ## Contributing
 
 1. Fork it
