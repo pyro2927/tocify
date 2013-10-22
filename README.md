@@ -11,6 +11,8 @@ Tocify aims to create a table of contents for your markdown files.  By default t
     * [Linux](#linux)
 * [Contributing](#contributing)
 
+_Generated with [tocify](https://github.com/pyro2927/tocify)_
+
 ## Installation
 
 Add this line to your application's Gemfile:

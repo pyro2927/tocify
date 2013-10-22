@@ -60,7 +60,7 @@ module Tocify
 
   def self.insert(toc, file_name)
     content = File.read(file_name)
-    content.sub!(/(\n## Table of Contents.+?|)\n##/im, "\n" + toc + "\n\n##")
+    content.sub!(/(\n## Table of Contents.+?|)\n##/im, "\n" + toc + "\n\n_Generated with [tocify](https://github.com/pyro2927/tocify)_\n\n##")
     File.write(file_name, content)
   end
 end
